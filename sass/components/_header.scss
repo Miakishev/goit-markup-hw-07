@@ -1,0 +1,122 @@
+.menu-list__link {
+   color: var(--mainTitleColor);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   margin-top: 32px;
+   margin-bottom: 28px;
+   display: block;
+   border-bottom: 4px solid #fff;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-list__link.active {
+   color: var(--acentColor);
+   border-bottom: 4px solid #2196f3;
+   padding-bottom: 28px;
+   margin-bottom: 0px;
+}
+
+.menu-list__link::after:hover,
+.menu-list__link::after:focus {
+   border-bottom: 4px solid #2196f3;
+}
+
+.menu-list__link:hover,
+.menu-list__link:focus {
+   color: var(--acentColor);
+}
+
+.header {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.1;
+   letter-spacing: 0.02em;
+   border-bottom: 1px solid #ececec;
+}
+
+.header__logo span {
+   color: var(--mainTitleColor);
+   letter-spacing: 0.03em;
+   font-family: var(--secondaryFont);
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.1;
+}
+
+.logo-blue {
+   color: var(--acentColor);
+   font-family: var(--secondaryFont);
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.1;
+}
+
+.header__logo {
+   margin-right: 93px;
+   display: flex;
+   align-items: center;
+}
+
+.menu-list {
+   display: flex;
+   align-items: center;
+}
+
+.menu-list__item {
+   margin-right: 50px;
+}
+
+.header .container {
+   display: flex;
+   align-items: center;
+}
+
+.header__nav-nav {
+   display: flex;
+}
+
+li.menu-list__item:last-child {
+   margin-right: 0;
+}
+
+.contact {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+   color: var(--mainTextColor);
+}
+
+.contact-elem__link:hover,
+.contact-elem__link:focus {
+   color: var(--acentColor);
+}
+
+.contact-elem__link:hover .contact__icon {
+   fill: var(--acentColor);
+}
+
+.contact-elem__link {
+   display: flex;
+   color: var(--mainTextColor);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__item {
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.contact__icon {
+   fill: var(--mainTextColor);
+   display: block;
+   margin: auto;
+   margin-right: 10px;
+   margin-left: 10px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact--item:last-child {
+   margin-left: 50px;
+}

@@ -1,0 +1,41 @@
+.about {
+   padding: 44px 0 94px;
+}
+
+.about__list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   margin: 0 -15px 0;
+}
+
+.about__item {
+   width: calc((100% / 3) - 30px);
+   margin: 0 15px;
+}
+
+.about__thumb {
+   position: relative;
+}
+
+.about__thumb > .about__label {
+   position: absolute;
+   top: 224px;
+   right: 0;
+   margin: 0;
+   padding: 27px 0px;
+
+   font-family: var(--mainFont);
+   font-weight: 700;
+   font-size: 14px;
+   font-style: normal;
+   line-height: 1.1;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   background: rgba(47, 48, 58, 0.8);
+   color: #fff;
+   display: block;
+   width: 370px;
+   height: 70px;
+}
