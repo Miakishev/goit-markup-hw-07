@@ -3,7 +3,7 @@ html {
    padding: 0;
 }
 body {
-   font-family: var(--mainFont), var(--secondaryFont), sans-serif;
+   font-family: $mainFont, $secondaryFont, sans-serif;
    font-weight: 400;
    margin: 0;
    padding: 0;
@@ -30,13 +30,13 @@ ul {
    list-style: none;
    margin: 0;
    padding: 0;
+   &ul li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
 }
 
-ul li {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
 h3 {
    font-weight: 500;
    font-size: 16px;
@@ -50,7 +50,7 @@ img {
    max-width: 100%;
 }
 
-.all {
+.portfolio {
    padding: 94px 0;
 }
 

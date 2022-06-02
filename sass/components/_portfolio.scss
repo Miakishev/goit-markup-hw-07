@@ -5,7 +5,7 @@
 }
 
 .all-img {
-   background-color: var(--mainWhite);
+   background-color: $mainWhite;
    border-left: 1px solid #eeeeee;
    border-right: 1px solid #eeeeee;
    border-bottom: 1px solid #eeeeee;
@@ -19,9 +19,13 @@
 .slider-item {
    width: calc((100% / 3) - 30px);
    display: block;
-   background-color: var(--mainWhite);
+   background-color: $mainWhite;
    margin: 15px;
    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   :focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
 }
 
 .slider__wrap {
@@ -33,22 +37,16 @@
    position: absolute;
    top: 0;
    background-color: rgba(33, 150, 243, 0.9);
-   color: var(--mainWhite);
+   color: $mainWhite;
    font-size: 18px;
    line-height: 1.5;
    padding: 40px;
    height: 100%;
    transform: translateY(100%);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.slider-item:hover .slider-text {
-   transform: translateY(0%);
-}
-
-.slider-item:hover,
-.slider-item:focus {
-   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   .slider-item:hover & {
+      transform: translateY(0%);
+   }
 }
 
 .slider__item-tittel {
@@ -57,29 +55,28 @@
    line-height: 2;
 }
 .slider__preview {
-   background: var(--mainWhite);
+   background: $mainWhite;
    transition-property: color;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   &.slider__preview {
+      color: $mainTitleColor;
+      display: block;
+   }
 }
 
 .slider__item-text {
-   color: var(--mainTextColor);
+   color: $mainTextColor;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.8;
-}
-
-.slider__preview {
-   color: var(--mainTitleColor);
-   display: block;
 }
 
 .button {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.6;
-   background: var(--thirdBackgroundColor);
+   background: $thirdBackgroundColor;
    font-family: inherit;
    padding-top: 6px;
    padding-bottom: 6px;
@@ -89,21 +86,20 @@
    transition-property: background-color, color, box-shadow;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover,
-.button:focus {
-   color: var(--mainWhite);
-   background: var(--acentColor);
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   border-radius: 4px;
+   &:hover,
+   :focus {
+      color: $mainWhite;
+      background: $acentColor;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+   }
 }
 
 .button-list {
    display: flex;
    justify-content: center;
    margin-bottom: 50px;
-}
-.button-list:not(:last-child) {
-   margin-right: 8px;
+   &:not(:last-child) {
+      margin-right: 8px;
+   }
 }

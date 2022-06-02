@@ -1,6 +1,6 @@
 .our-team {
    font-weight: 500;
-   background: var(--thirdBackgroundColor);
+   background: $thirdBackgroundColor;
    font-size: 16px;
    line-height: 1.1;
    padding: 94px 0 94px;
@@ -20,16 +20,16 @@
 }
 
 .our-team__soc {
-   fill: var(--SocPicture);
+   fill: $SocPicture;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team__soc-link:hover {
-   background-color: var(--acentColor);
+   background-color: $acentColor;
 }
 
 .our-team__soc-link:hover .our-team__soc {
-   fill: var(--mainWhite);
+   fill: $mainWhite;
 }
 
 .our-team__soc-link {
@@ -43,7 +43,7 @@
 }
 
 .our-team__prof {
-   color: var(--mainTextColor);
+   color: $mainTextColor;
    margin-top: 10px;
    margin-bottom: 16px;
 }
@@ -57,7 +57,7 @@
    width: calc(25% - 30px);
    display: block;
    text-align: center;
-   background: var(--mainWhite);
+   background: $mainWhite;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
    margin: 0 15px 0;
